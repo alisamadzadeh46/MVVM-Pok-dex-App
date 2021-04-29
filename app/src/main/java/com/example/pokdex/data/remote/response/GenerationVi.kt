@@ -1,6 +1,6 @@
 package com.example.pokdex.data.remote.response
 
 data class GenerationVi(
-    val omegaruby-alphasapphire: OmegarubyAlphasapphire,
-    val x-y: XY
+    val omegarub_alphasapphire: OmegarubyAlphasapphire,
+    val x_y: XY
 )
