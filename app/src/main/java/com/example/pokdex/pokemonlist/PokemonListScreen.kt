@@ -57,13 +57,12 @@ fun PokemonListScreen(
 
             )
             SearchBar(
-                hint = "Search...",
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp)
+                hint = "Search..."
             ) {
 
             }
+            Spacer(modifier = Modifier.height(16.dp))
+            PokemonList(navController = navController)
         }
 
     }
@@ -71,7 +70,6 @@ fun PokemonListScreen(
 
 @Composable
 fun SearchBar(
-    modifier: Modifier,
     hint: String = "",
     onSearch: (String) -> Unit = {}
 ) {
@@ -92,6 +90,7 @@ fun SearchBar(
             singleLine = true,
             textStyle = TextStyle(color = Color.Black),
             modifier = Modifier
+                .padding(8.dp)
                 .fillMaxWidth()
                 .shadow(5.dp, CircleShape)
                 .background(Color.White, CircleShape)
